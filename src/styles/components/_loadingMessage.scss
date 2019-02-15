@@ -1,0 +1,18 @@
+.c-loading-message {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: $space-big;
+  color: $accent-color;
+  &__icon {
+    margin-bottom: $space;
+    font-size: 48px;
+  }
+  &__title {
+    color: $grey-dark;
+    text-align: center;
+  }
+}

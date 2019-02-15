@@ -1,8 +1,13 @@
 .c-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  height: 60px;
   padding: $space;
   background-color: $primary-color;
   &__img {

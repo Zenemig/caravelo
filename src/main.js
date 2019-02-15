@@ -1,12 +1,18 @@
 import Vue from 'vue'
 import App from './App.vue'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faArrowCircleLeft } from '@fortawesome/pro-light-svg-icons'
+import {
+  faArrowCircleLeft,
+  faTimesCircle,
+  faSpinner
+} from '@fortawesome/pro-light-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import './registerServiceWorker'
 import 'normalize.css/normalize.css'
 
 library.add(faArrowCircleLeft)
+library.add(faTimesCircle)
+library.add(faSpinner)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

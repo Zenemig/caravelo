@@ -1,5 +1,8 @@
 @import './variables';
-@import './fonts.scss';
+@import './fonts';
 @import './base';
+@import './layout';
 
 @import './components/header';
+@import './components/errorMessage';
+@import './components/loadingMessage';

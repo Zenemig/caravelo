@@ -6,6 +6,12 @@
 
 <script>
 export default {
-  name: 'mainForm'
+  name: 'mainForm',
+  props: {
+    inputJson: {
+      type: Object,
+      required: true
+    }
+  }
 }
 </script>
