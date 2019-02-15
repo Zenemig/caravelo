@@ -2,7 +2,7 @@
   <header class="c-header">
     <img
       class="c-header__img"
-      src="../assets/jetblue-logo.svg"
+      src="../assets/images/jetblue-logo.svg"
       title="JetBlue Logo"
       alt="JetBlue"
     />
