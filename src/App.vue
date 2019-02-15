@@ -1,11 +1,24 @@
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <main-header />
+
+    <meal-form />
+  </div>
 </template>
 
 <script>
+import mainHeader from './components/mainHeader'
+import mealForm from './components/mealForm'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    mainHeader,
+    mealForm
+  }
 }
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+@import './styles/main.scss';
+</style>

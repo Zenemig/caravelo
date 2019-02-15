@@ -1,0 +1,23 @@
+.c-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: $space;
+  background-color: $primary-color;
+  &__img {
+    height: 20px;
+  }
+  &__back-button {
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    color: $accent-color;
+    font-size: 20px;
+    transition: color 0.3s linear;
+    &:hover {
+      color: lighten($accent-color, 15%);
+    }
+  }
+}
