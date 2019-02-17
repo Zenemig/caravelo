@@ -1,0 +1,18 @@
+.a-alert {
+  border-radius: 3px;
+  padding: $space-small;
+  font-size: 12px;
+  text-align: center;
+  &.error {
+    background-color: lighten($red, 30%);
+    color: darken($red, 20%);
+  }
+  &.warning {
+    background-color: lighten($yellow, 10%);
+    color: darken($yellow, 20%);
+  }
+  &.success {
+    background-color: lighten($green, 20%);
+    color: darken($green, 20%);
+  }
+}

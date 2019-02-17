@@ -1,0 +1,55 @@
+.c-flight-selection {
+  &__title {
+    margin: $space-big $space $space-small;
+    font-size: 28px;
+    font-weight: 300;
+  }
+  &__description {
+    margin: 0 $space $space-big $space;
+    color: $grey;
+    font-size: 14px;
+  }
+  &__flights {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 $space;
+    padding: 0;
+    list-style-type: none;
+    @media all and (min-width: 760px) {
+      flex-flow: row wrap;
+    }
+    .c-flight {
+      margin-bottom: $space-big;
+      @media all and (min-width: 760px) {
+        &:not(:last-child) {
+          margin-right: $space-big;
+        }
+      }
+    }
+  }
+  &__footer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: $space;
+    @media all and (min-width: 760px) {
+      align-items: flex-start;
+    }
+    .a-alert {
+      flex: 1 1 100%;
+      margin-bottom: $space;
+      width: 100%;
+      max-width: 350px;
+    }
+    .a-button {
+      width: 100%;
+      max-width: 350px;
+      @media all and (min-width: 760px) {
+        width: auto;
+      }
+    }
+  }
+}

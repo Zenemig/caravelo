@@ -4,9 +4,11 @@
 @import './layout';
 
 @import './atoms/button';
+@import './atoms/alert';
 
 @import './components/header';
 @import './components/errorMessage';
 @import './components/loadingMessage';
 @import './components/noFlights';
-@import './components/form';
+@import './components/flightSelection';
+@import './components/flightDetail';

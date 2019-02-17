@@ -1,0 +1,46 @@
+.c-flight {
+  box-shadow: 0px 2px 5px $grey;
+  border-radius: 3px;
+  width: 100%;
+  max-width: 350px;
+  &__header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: $space-small $space;
+    background-color: $secondary-color;
+    color: white;
+    .title {
+      margin: 0;
+      font-weight: 300;
+    }
+    .duration {
+      font-size: 14px;
+    }
+  }
+  &__details {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: $space;
+    .item {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      &__icon {
+        margin-bottom: $space-smallest;
+        color: $secondary-color;
+        font-size: 26px;
+      }
+      &__airport {
+        margin-bottom: $space-small;
+        font-size: 12px;
+      }
+    }
+  }
+}

@@ -7,7 +7,7 @@
     <main v-else class="l-main-content">
       <loading-message v-if="loading" />
 
-      <meal-form v-else-if="confirmed" :input-json="inputJson" />
+      <flight-selection v-else-if="confirmed" :input-json="inputJson" />
 
       <no-flights v-else />
     </main>
@@ -20,7 +20,7 @@ import mainHeader from './components/mainHeader'
 import errorMessage from './components/errorMessage'
 import loadingMessage from './components/loadingMessage'
 import noFlights from './components/noFlights'
-import mealForm from './components/mealForm'
+import flightSelection from './components/flightSelection'
 
 export default {
   name: 'app',
@@ -29,7 +29,7 @@ export default {
     errorMessage,
     loadingMessage,
     noFlights,
-    mealForm
+    flightSelection
   },
   data () {
     return {
@@ -56,7 +56,6 @@ export default {
         this.errorLoadingData = true
         this.errorMessage = error.message
       })
-
   }
 }
 </script>
