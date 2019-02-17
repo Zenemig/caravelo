@@ -7,7 +7,9 @@
     <main v-else class="l-main-content">
       <loading-message v-if="loading" />
 
-      <meal-form v-else :input-json="inputJson" />
+      <meal-form v-else-if="confirmed" :input-json="inputJson" />
+
+      <no-flights v-else />
     </main>
   </div>
 </template>
@@ -17,6 +19,7 @@ import axios from 'axios'
 import mainHeader from './components/mainHeader'
 import errorMessage from './components/errorMessage'
 import loadingMessage from './components/loadingMessage'
+import noFlights from './components/noFlights'
 import mealForm from './components/mealForm'
 
 export default {
@@ -25,11 +28,13 @@ export default {
     mainHeader,
     errorMessage,
     loadingMessage,
+    noFlights,
     mealForm
   },
   data () {
     return {
       inputJson: null,
+      confirmed: false,
       outputJson: null,
       loading: true,
       errorLoadingData: false,
@@ -42,12 +47,16 @@ export default {
       .then(response => {
         this.inputJson = response.data
         this.loading = false
+        if (response.data.booking.status === 'Confirmed') {
+          this.confirmed = true
+        }
       })
       .catch(error => {
         console.log(error)
         this.errorLoadingData = true
         this.errorMessage = error.message
       })
+
   }
 }
 </script>
