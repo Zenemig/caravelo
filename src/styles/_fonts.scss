@@ -1,35 +1,48 @@
 @font-face {
   font-family: Montserrat;
-  src: url(assets/fonts/Montserrat/Montserrat-Regular.ttf);
-  font-weight: 400;
+  src: url(assets/fonts/Montserrat-Light.ttf);
+  font-weight: 300;
+  font-style: normal;
 }
 @font-face {
   font-family: Montserrat;
-  src: url(assets/fonts/Montserrat/Montserrat-Medium.ttf);
-  font-weight: 500;
+  src: url(assets/fonts/Montserrat-LightItalic.ttf);
+  font-weight: 300;
+  font-style: italic;
 }
-
 @font-face {
-  font-family: CrimsonText;
-  src: url(assets/fonts/Crimson-Text/CrimsonText-Regular.ttf);
+  font-family: Montserrat;
+  src: url(assets/fonts/Montserrat-Regular.ttf);
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: CrimsonText;
-  src: url(assets/fonts/Crimson-Text/CrimsonText-Italic.ttf);
+  font-family: Montserrat;
+  src: url(assets/fonts/Montserrat-Italic.ttf);
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
-  font-family: CrimsonText;
-  src: url(assets/fonts/Crimson-Text/CrimsonText-Bold.ttf);
+  font-family: Montserrat;
+  src: url(assets/fonts/Montserrat-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(assets/fonts/Montserrat-MediumItalic.ttf);
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(assets/fonts/Montserrat-Bold.ttf);
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: CrimsonText;
-  src: url(assets/fonts/Crimson-Text/CrimsonText-BoldItalic.ttf);
+  font-family: Montserrat;
+  src: url(assets/fonts/Montserrat-BoldItalic.ttf);
   font-weight: 700;
   font-style: italic;
 }
