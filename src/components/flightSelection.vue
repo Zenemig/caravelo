@@ -52,7 +52,7 @@ export default {
     return {
       journeys: [],
       totalJourneys: 0,
-      selectedMeals: [0]
+      selectedMeals: []
     }
   },
   methods: {
@@ -73,21 +73,21 @@ export default {
       if (meals === 0) {
         return 'No flights have been selected'
       } else if (meals === 1 && this.totalJourneys === 1) {
-        return "You've selected a meal for " + meals + " flight"
+        return "You've selected a meal for " + meals + ' flight'
       } else if (meals === this.totalJourneys) {
         return "You've selected a meal for each flight"
       } else {
-        return "You've selected a meal for " + meals + " of " + this.totalJourneys + " flights"
+        return "You've selected a meal for " + meals + ' of ' + this.totalJourneys + ' flights'
       }
     },
     alertType () {
       let meals = this.selectedMeals.length
       if (meals === 0) {
         return 'error'
-      } else if (meals < this.totalJourneys) {
-        return 'warning'
       } else if (meals === this.totalJourneys) {
         return 'success'
+      } else {
+        return 'warning'
       }
     }
   }
