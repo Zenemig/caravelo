@@ -1,26 +1,25 @@
-.c-flight {
-  cursor: pointer;
-  box-shadow: 0px 2px 5px $grey;
-  border-radius: 3px;
-  width: 100%;
-  max-width: 350px;
+.c-meal-selection {
+  z-index: 20;
   &__header {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
     padding: $space-small $space;
     background-color: $secondary-color;
     color: white;
     transition: background-color 0.2s linear;
     .title {
+      flex: 1 1 auto;
       margin: 0;
       font-weight: 300;
     }
     .duration {
+      margin-right: $space;
       font-size: 14px;
+    }
+    .icon {
+      cursor: pointer;
     }
   }
   &__details {
@@ -45,27 +44,32 @@
       }
     }
   }
+  &__meals {
+    cursor: pointer;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-bottom: $space-big;
+    .c-meal {
+      flex: 1 1 auto;
+    }
+  }
+  &__bid {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: $space-big;
+    .c-bid-control {
+      flex: 1 1 auto;
+    }
+  }
   &__footer {
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-    background-color: $accent-color;
-    padding: $space-small $space;
-    color: white;
-    font-size: 12px;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  &:hover {
-    .c-flight__header {
-      background-color: lighten($secondary-color, 10%);
-    }
-  }
-  &--meal-selected {
-    cursor: not-allowed;
-    &:hover {
-      .c-flight__header {
-        background-color: $secondary-color;
-      }
-    }
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 $space-big $space-big;
   }
 }

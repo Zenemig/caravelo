@@ -1,0 +1,60 @@
+.c-meal {
+  min-height: 74px;
+  padding: $space;
+  transition: background-color 0.3s linear;
+  &__info {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    .name {
+      flex: 1 1 auto;
+      font-size: 18px;
+      font-weight: 300;
+      transition: color 0.3s linear;
+    }
+    .range {
+      flex: 0 0 auto;
+      border-radius: 3px;
+      padding: $space-smallest;
+      background-color: $secondary-color;
+      color: white;
+      font-size: 12px;
+      transition: background-color 0.3s linear, color 0.3s linear;
+    }
+    .description {
+      flex: 1 1 100%;
+      margin-top: $space-small;
+      color: $grey;
+      font-size: 14px;
+      font-weight: 400;
+      font-style: italic;
+      transition: color 0.3s linear;
+    }
+  }
+  &:hover {
+    background-color: lighten($secondary-color, 40%);
+    .c-meal__info {
+      .name, .description {
+        color: white;
+      }
+      .range {
+        background-color: white;
+        color: lighten($secondary-color, 40%);
+      }
+    }
+  }
+  &.selected {
+    background-color: $secondary-color;
+    .c-meal__info {
+      .name, .description {
+        color: white;
+      }
+      .range {
+        color: $secondary-color;
+        background-color: white;
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
 <template>
-  <div class="c-flight">
+  <div class="c-flight" :class="{'c-flight--meal-selected': isMealSelected}">
     <header class="c-flight__header">
       <h3 class="title">
         Flight {{ flight }}
@@ -35,6 +35,12 @@
         </span>
       </div>
     </section>
+
+    <footer v-if="isMealSelected" class="c-flight__footer">
+      <span class="text">
+        <font-awesome-icon :icon="['fal', 'check-circle']" /> Meal Selected
+      </span>
+    </footer>
   </div>
 </template>
 
@@ -65,6 +71,14 @@ export default {
     arrivalDate: {
       type: String,
       required: true
+    },
+    selectedMeals: {
+      type: Array,
+      required: true
+    },
+    flightKey: {
+      type: String,
+      required: true
     }
   },
   data () {
@@ -72,11 +86,17 @@ export default {
 
     }
   },
-  methods: {
-
-  },
-  created () {
-
+  computed: {
+    isMealSelected () {
+      let arr = this.selectedMeals
+      let result = false
+      arr.map(selection => {
+        if (this.flightKey === selection.journeyKey) {
+          result = true
+        }
+      })
+      return result
+    }
   }
 }
 </script>

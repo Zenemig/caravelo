@@ -8,7 +8,10 @@ import {
   faPlane,
   faPlaneDeparture,
   faPlaneArrival,
-  faClock
+  faClock,
+  faCheckCircle,
+  faPlusCircle,
+  faMinusCircle
 } from '@fortawesome/pro-light-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import './registerServiceWorker'
@@ -21,6 +24,9 @@ library.add(faPlane)
 library.add(faPlaneDeparture)
 library.add(faPlaneArrival)
 library.add(faClock)
+library.add(faCheckCircle)
+library.add(faPlusCircle)
+library.add(faMinusCircle)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

@@ -7,7 +7,7 @@
     <main v-else class="l-main-content">
       <loading-message v-if="loading" />
 
-      <flight-selection v-else-if="confirmed" :input-json="inputJson" />
+      <flight-selection v-else-if="confirmed" :input-json="inputJson" @submit-payload="printOutputJson" />
 
       <no-flights v-else />
     </main>
@@ -39,6 +39,14 @@ export default {
       loading: true,
       errorLoadingData: false,
       errorMessage: ''
+    }
+  },
+  methods: {
+    printOutputJson: function (payload) {
+      this.outputJson = {
+        "selection": payload
+      }
+      console.log(this.outputJson)
     }
   },
   created () {

@@ -13,4 +13,13 @@
     background-color: $accent-color;
     color: white;
   }
+  &--cancel {
+    border: none;
+    color: $red;
+    &:hover {
+      background-color: transparent;
+      color: $red;
+      text-decoration: underline;
+    }
+  }
 }
