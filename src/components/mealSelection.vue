@@ -66,7 +66,7 @@
         Cancel
       </button>
 
-      <button class="a-button" @click="selectMeal">
+      <button v-if="this.selectedMeal" class="a-button" @click="selectMeal">
         Select Meal
       </button>
     </footer>
@@ -129,7 +129,7 @@ export default {
       bidCurrency: '',
       showBidControl: false,
       bidAmmount: 0,
-      selectedMeal: '',
+      selectedMeal: null,
       payload: {}
     }
   },

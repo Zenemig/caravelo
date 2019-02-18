@@ -11,6 +11,11 @@
 
       <no-flights v-else />
     </main>
+
+    <div class="c-output-modal" :class="{'c-output-modal--show': showOutputJson}">
+      <font-awesome-icon :icon="['fal', 'times-circle']" @click="showOutputJson = false" class="icon" />
+      <pre><code>{{ outputJson }}</code></pre>
+    </div>
   </div>
 </template>
 
@@ -38,7 +43,8 @@ export default {
       outputJson: null,
       loading: true,
       errorLoadingData: false,
-      errorMessage: ''
+      errorMessage: '',
+      showOutputJson: false
     }
   },
   methods: {
@@ -46,7 +52,7 @@ export default {
       this.outputJson = {
         "selection": payload
       }
-      console.log(this.outputJson)
+      this.showOutputJson = true
     }
   },
   created () {
