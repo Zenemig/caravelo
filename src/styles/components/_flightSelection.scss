@@ -21,6 +21,7 @@
     list-style-type: none;
     @media all and (min-width: 760px) {
       flex-flow: row wrap;
+      align-items: flex-start;
     }
     .c-flight {
       margin-bottom: $space-big;
