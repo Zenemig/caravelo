@@ -1,7 +1,7 @@
 <template>
   <div class="c-bid-control">
     <div class="less" @click="changeAmmout('less')">
-      <font-awesome-icon :icon="['fal', 'minus-circle']" />
+      <font-awesome-icon icon="minus-circle" />
     </div>
 
     <div class="ammount">
@@ -9,7 +9,7 @@
     </div>
 
     <div class="more" @click="changeAmmout('more')">
-      <font-awesome-icon :icon="['fal', 'plus-circle']" />
+      <font-awesome-icon icon="plus-circle" />
     </div>
   </div>
 </template>

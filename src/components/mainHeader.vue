@@ -11,7 +11,7 @@
       class="c-header__back-button"
       @click="back()"
     >
-      <font-awesome-icon :icon="['fal', 'arrow-circle-left']" />
+      <font-awesome-icon icon="arrow-circle-left" />
     </button>
   </header>
 </template>

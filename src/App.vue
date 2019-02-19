@@ -13,7 +13,7 @@
     </main>
 
     <div class="c-output-modal" :class="{'c-output-modal--show': showOutputJson}">
-      <font-awesome-icon :icon="['fal', 'times-circle']" @click="showOutputJson = false" class="icon" />
+      <font-awesome-icon icon="times-circle" @click="showOutputJson = false" class="icon" />
       <pre><code>{{ outputJson }}</code></pre>
     </div>
   </div>

@@ -6,13 +6,13 @@
       </h3>
 
       <div class="duration">
-        <font-awesome-icon :icon="['fal', 'clock']" /> {{ flightLength }}
+        <font-awesome-icon icon="clock" /> {{ flightLength }}
       </div>
     </header>
 
     <section class="c-flight__details">
       <div class="item">
-        <font-awesome-icon :icon="['fal', 'plane-departure']" class="item__icon" />
+        <font-awesome-icon icon="plane-departure" class="item__icon" />
 
         <span class="item__airport">
           {{ departureAirport }}
@@ -24,7 +24,7 @@
       </div>
 
       <div class="item">
-        <font-awesome-icon :icon="['fal', 'plane-arrival']" class="item__icon" />
+        <font-awesome-icon icon="plane-arrival" class="item__icon" />
 
         <span class="item__airport">
           {{ arrivalAirport }}
@@ -38,7 +38,7 @@
 
     <footer v-if="isMealSelected" class="c-flight__footer">
       <span class="text">
-        <font-awesome-icon :icon="['fal', 'check-circle']" /> Meal Selected
+        <font-awesome-icon icon="check-circle" /> Meal Selected
       </span>
     </footer>
   </div>

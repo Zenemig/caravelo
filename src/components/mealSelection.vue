@@ -6,15 +6,15 @@
       </h3>
 
       <div class="duration">
-        <font-awesome-icon :icon="['fal', 'clock']" /> {{ flightLength }}
+        <font-awesome-icon icon="clock" /> {{ flightLength }}
       </div>
 
-      <font-awesome-icon :icon="['fal', 'times-circle']" @click="cancel" class="icon" />
+      <font-awesome-icon icon="times-circle" @click="cancel" class="icon" />
     </header>
 
     <section class="c-meal-selection__details">
       <div class="item">
-        <font-awesome-icon :icon="['fal', 'plane-departure']" class="item__icon" />
+        <font-awesome-icon icon="plane-departure" class="item__icon" />
 
         <span class="item__airport">
           {{ departureAirport }}
@@ -26,7 +26,7 @@
       </div>
 
       <div class="item">
-        <font-awesome-icon :icon="['fal', 'plane-arrival']" class="item__icon" />
+        <font-awesome-icon icon="plane-arrival" class="item__icon" />
 
         <span class="item__airport">
           {{ arrivalAirport }}

@@ -12,7 +12,7 @@ import {
   faCheckCircle,
   faPlusCircle,
   faMinusCircle
-} from '@fortawesome/pro-light-svg-icons'
+} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import './registerServiceWorker'
 import 'normalize.css/normalize.css'
